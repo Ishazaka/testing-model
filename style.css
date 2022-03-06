@@ -7,15 +7,16 @@
 body {
   margin: 0;
   padding: 0;
-  background:#000000;
-  color:white;
+
+}
+p{
+  font-size: 20px;
 }
 
 
 
-
 .wrapper {
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,13 +27,13 @@ body {
   color: #ffffff;
   letter-spacing: 3px;
   background:#000000;
-  font-size:44px;
+  font-size:52px;
   font-weight: bold;
   font-family: Arial;
   text-transform: uppercase;
 }
 .txt::before {
-  content: 'isha';
+  content: 'ISHA';
   position: absolute;
   mix-blend-mode: difference;
   filter: blur(2px);
@@ -59,7 +60,7 @@ body {
   right:0;
   bottom:-10px;
   mix-blend-mode: color-dodge;
-  animation: dodge-area 15s linear infinite;
+  animation: dodge-area 17s linear infinite;
 }
 @keyframes dodge-area {
   to {
@@ -78,11 +79,95 @@ body {
 .nav-link:hover{
     border-top: 1px solid blueviolet;
   border-bottom: 1px solid blueviolet;
-  color: blueviolet 
+  color: blueviolet !important;
 }
 .nav-link:hover ion-icon{
   color: blueviolet 
 }
+
+
+/* home section heading1 */
+
+.hey{
+  margin-top: 100px;
+  padding: 0 100px;
+ display: flex;
+
+} 
+
+
+/* button of home page */
+
+
+
+.home-button-box{
+  position: relative;
+  margin: 50px;
+}
+.home-button-box a{
+  position: relative;
+  padding: 11px 24px;
+   margin: 30px;
+   color:blueviolet;
+   /* color: rgb(135, 15, 228); */
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+  transition: 0.5s;
+  font-weight: 700;
+  
+}
+ a.style{
+  color:blueviolet;
+}
+
+ a.style:hover{
+ background-color: blueviolet;
+ color: rgb(241, 235, 235);
+ box-shadow: 0 0 50px blueviolet;
+ transition-delay: 0.3s; 
+} 
+
+
+
+.home-button-box a.style:before{
+content: '';
+position: absolute;
+top:0;
+left: 0;
+width: 10px;
+height: 10px;
+border-top: 2px solid blueviolet; 
+border-left: 2px solid blueviolet; 
+transition: 0.5s;
+
+}
+
+ a.style:hover:before{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+ a.style:after{
+content: '';
+position: absolute;
+bottom:0;
+right: 0;
+width: 10px;
+height: 10px;
+border-bottom: 2px solid blueviolet; 
+border-right: 2px solid blueviolet; 
+transition: 0.5s;
+}
+ a.style:hover:after{
+  width: 100%;
+  height: 100%;
+   transition: 0.5s;
+  transition-delay: 0s;
+} 
+
 
 
 
