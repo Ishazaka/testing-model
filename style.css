@@ -89,11 +89,13 @@ p{
 /* home section heading1 */
 
 .hey{
+  
   margin-top: 100px;
   padding: 0 100px;
  display: flex;
 
 } 
+
 
 
 /* button of home page */
@@ -168,6 +170,106 @@ transition: 0.5s;
   transition-delay: 0s;
 } 
 
+
+/* small icons */
+
+
+.firsticon{ 
+  position: absolute;
+  font-size: 90px;
+  top: 120px;
+ right: 32%;
+
+ animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+  100%{transform: rotate(360deg);}
+}
+
+/* .firsticon{
+
+  position: absolute;
+  font-size: 100px;
+  bottom: -50px;
+ right: 62%; 
+ z-index:2;
+ animation: mymove 10s infinite;
+} */
+
+.secondicon ion-icon{
+  color: blueviolet;
+}
+
+
+.secondicon{  
+  position: absolute;
+  font-size: 40px;
+  bottom: 150px;
+ right: 12%;
+ z-index: 2;
+ animation: topbounce 5s infinite;
+}
+@keyframes topbounce{
+0%,100%{
+ transform: translateY(0);
+}
+50%{
+  transform: translateY(55px);
+}
+
+}
+.thirdicon ion-icon{
+  color: blueviolet ;
+}
+
+
+.thirdicon{  
+  position: absolute;
+  font-size: 50px;
+  bottom: 190px;
+ left: 10%;
+ animation: mymove 5s infinite;
+}
+
+
+/* section two about section */
+
+/* for all main headings */
+
+.headerone h1{
+  position: relative;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+.headerone h1::after{
+  content: "";
+  position: absolute;
+bottom:-10;
+left: 320;
+  height: 3px;
+  width: 130px;
+  background-color: white ;
+}
+
+.headerone .me{
+  color:blueviolet;
+}
+
+
+/* skills details */
+
+
+.skills-details p{
+  font-size: 20px;
+   color: blueviolet;
+    padding: 10px 60px;
+ margin: 10px 40px; 
+ background-color: rgb(241, 234, 234);
+ border-radius: 20px;
+} 
 
 
 
