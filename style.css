@@ -271,5 +271,8 @@ left: 320;
  border-radius: 20px;
 } 
 
-
+.skills-details p:hover{
+  background-color: blueviolet;
+  color:white;
+}
 
