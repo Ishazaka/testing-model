@@ -1,6 +1,6 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;1,200&family=Hubballi&family=Merienda:wght@400;700&family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
 
 
 
@@ -8,9 +8,6 @@ body {
   margin: 0;
   padding: 0;
 
-}
-p{
-  font-size: 34px;
 }
 
 
@@ -20,81 +17,96 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000000; 
+  background: #000000;
 }
 
 .txt {
   color: #ffffff;
   letter-spacing: 3px;
-  background:#000000;
-  font-size:52px;
+  background: #000000;
+  font-size: 52px;
   font-weight: bold;
   font-family: Arial;
   text-transform: uppercase;
 }
+
 .txt::before {
   content: 'ISHA';
   position: absolute;
   mix-blend-mode: difference;
   filter: blur(2px);
 }
+
 .neon-wrapper {
-  display:inline-flex;
+  display: inline-flex;
   filter: brightness(200%);
   overflow: hidden;
 }
-.gradient{
-  background: linear-gradient(114.5793141156962deg, rgba(6, 227, 250,1) 4.927083333333334%,rgba(229, 151, 64,1) 97.84374999999999%);
+
+.gradient {
+  background: linear-gradient(114.5793141156962deg, rgba(6, 227, 250, 1) 4.927083333333334%, rgba(229, 151, 64, 1) 97.84374999999999%);
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
-  height:100%;
+  height: 100%;
   mix-blend-mode: multiply;
 }
+
 .dodge {
-  background: radial-gradient(circle,white,black 35%) center / 10% 20%;
+  background: radial-gradient(circle, white, black 35%) center / 10% 20%;
   position: absolute;
-  top:-100%;
-  left:-100%;
-  right:0;
-  bottom:-10px;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: -10px;
   mix-blend-mode: color-dodge;
   animation: dodge-area 17s linear infinite;
 }
+
 @keyframes dodge-area {
   to {
-      transform: translate(50%,50%);
+    transform: translate(50%, 50%);
   }
 }
 
 /* navlinks */
 
 
-
-.nav-item:first-child{
+.nav-item:first-child {
   border-bottom: 1px solid blueviolet;
 }
 
-.nav-link:hover{
-    border-top: 1px solid blueviolet;
+.nav-link:hover {
+  border-top: 1px solid blueviolet;
   border-bottom: 1px solid blueviolet;
   color: blueviolet !important;
 }
-.nav-link:hover ion-icon{
-  color: blueviolet 
+
+.nav-link:hover ion-icon {
+  color: blueviolet
 }
 
+ul .nav-item {
+  font-size: 18px;
+  font-family: "Playfair Display";
+  font-weight: 300;
+  letter-spacing: 1px;
+}
 
 /* home section heading1 */
 
-.hey{
-  
+.hey {
+
   margin-top: 100px;
   padding: 0 100px;
- display: flex;
+  display: flex;
 
-} 
+}
+
+.home-details-p {
+  font-size: 30px;
+}
 
 
 
@@ -102,177 +114,344 @@ p{
 
 
 
-.home-button-box{
+.home-button-box {
   position: relative;
   margin: 50px;
 }
-.home-button-box a{
+
+.home-button-box a {
   position: relative;
   padding: 11px 24px;
-   margin: 30px;
-   color:blueviolet;
-   /* color: rgb(135, 15, 228); */
+  margin: 30px;
+  color: blueviolet;
+  /* color: rgb(135, 15, 228); */
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 18px;
   transition: 0.5s;
   font-weight: 700;
-  
-}
- a.style{
-  color:blueviolet;
-}
-
- a.style:hover{
- background-color: blueviolet;
- color: rgb(241, 235, 235);
- box-shadow: 0 0 50px blueviolet;
- transition-delay: 0.3s; 
-} 
-
-
-
-.home-button-box a.style:before{
-content: '';
-position: absolute;
-top:0;
-left: 0;
-width: 10px;
-height: 10px;
-border-top: 2px solid blueviolet; 
-border-left: 2px solid blueviolet; 
-transition: 0.5s;
 
 }
 
- a.style:hover:before{
+a.style {
+  color: blueviolet;
+}
+
+a.style:hover {
+  background-color: blueviolet;
+  color: rgb(241, 235, 235);
+  box-shadow: 0 0 50px blueviolet;
+  transition-delay: 0.3s;
+}
+
+
+
+.home-button-box a.style:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  transition: 0.5s;
+
+}
+
+a.style:hover:before {
   width: 100%;
   height: 100%;
   transition: 0.5s;
   transition-delay: 0s;
 }
 
- a.style:after{
-content: '';
-position: absolute;
-bottom:0;
-right: 0;
-width: 10px;
-height: 10px;
-border-bottom: 2px solid blueviolet; 
-border-right: 2px solid blueviolet; 
-transition: 0.5s;
+a.style:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid blueviolet;
+  border-right: 2px solid blueviolet;
+  transition: 0.5s;
 }
- a.style:hover:after{
+
+a.style:hover:after {
   width: 100%;
   height: 100%;
-   transition: 0.5s;
+  transition: 0.5s;
   transition-delay: 0s;
-} 
+}
 
 
 /* small icons */
 
 
-.firsticon{ 
+.firsticon {
   position: absolute;
-  font-size: 90px;
+  font-size: 120px;
   top: 120px;
- right: 32%;
+  right: 32%;
 
- animation: mymove 10s infinite;
+  animation: mymove 10s infinite;
 }
 
 @keyframes mymove {
-  50% {transform: rotate(180deg);}
-  100%{transform: rotate(360deg);}
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-/* .firsticon{
 
-  position: absolute;
-  font-size: 100px;
-  bottom: -50px;
- right: 62%; 
- z-index:2;
- animation: mymove 10s infinite;
-} */
-
-.secondicon ion-icon{
+.secondicon ion-icon {
   color: blueviolet;
 }
 
 
-.secondicon{  
-  position: absolute;
-  font-size: 40px;
-  bottom: 150px;
- right: 12%;
- z-index: 2;
- animation: topbounce 5s infinite;
-}
-@keyframes topbounce{
-0%,100%{
- transform: translateY(0);
-}
-50%{
-  transform: translateY(55px);
-}
-
-}
-.thirdicon ion-icon{
-  color: blueviolet ;
-}
-
-
-.thirdicon{  
+.secondicon {
   position: absolute;
   font-size: 50px;
+  bottom: 150px;
+  right: 12%;
+  z-index: 2;
+  animation: topbounce 5s infinite;
+}
+
+@keyframes topbounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(55px);
+  }
+
+}
+
+.thirdicon ion-icon {
+  color: blueviolet;
+}
+
+
+.thirdicon {
+  position: absolute;
+  font-size: 60px;
   bottom: 190px;
- left: 10%;
- animation: mymove 5s infinite;
+  left: 10%;
+  animation: mymove 5s infinite;
 }
 
 
 /* section two about section */
 
-/* for all main headings */
 
-.headerone h1{
+
+.about-section-details {
+  /* border: 1px solid white; */
+  position: relative;
+  width: 70vw;
+  margin: 70px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.headerone {
+
+  width: 330px;
+  position: relative;
+  /* border: 1px solid white; */
+  margin: auto;
+}
+
+
+.headerone h1 {
   position: relative;
   font-size: 50px;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
 }
-.headerone h1::after{
+
+
+
+.headerone h1::after {
   content: "";
   position: absolute;
-bottom:-10;
-left: 320;
+  bottom: -10;
+  left: 60;
   height: 3px;
   width: 130px;
-  background-color: white ;
+  background-color: white;
 }
 
-.headerone .me{
-  color:blueviolet;
+.headerone .me {
+  color: blueviolet;
+}
+
+.about-section-details p {
+  font-size: 24px;
 }
 
 
 /* skills details */
 
 
-.skills-details p{
+.skills-details span {
   font-size: 20px;
-   color: blueviolet;
-    padding: 10px 60px;
- margin: 10px 40px; 
- background-color: rgb(241, 234, 234);
- border-radius: 20px;
-} 
-
-.skills-details p:hover{
-  background-color: blueviolet;
-  color:white;
+  color: blueviolet;
+  padding: 7px 25px;
+  margin: 40px 40px;
+  background-color: rgb(241, 234, 234);
+  border-radius: 15px;
 }
 
+.skills-details span:hover {
+  background-image: linear-gradient(pink, blueviolet);
+  color: white;
+}
+
+
+/* third section projects section */
+
+.project-details {
+
+  position: relative;
+  width: 90vw;
+  margin: 40px auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.project-details .detail {
+  width: 55%;
+  min-height: 50vh;
+  text-align: center;
+  padding-right: 60px;
+  /* border: 1px solid white; */
+}
+
+.detail h1 {
+  color: transparent;
+  margin-bottom: 30px;
+  -webkit-text-stroke: 2px blueviolet;
+
+}
+
+.detail p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.live-links a {
+  margin: 20px 10px;
+  background-image: linear-gradient(to bottom, blueviolet, rgb(233, 81, 144));
+  color: white;
+  border-radius: 3px;
+  padding: 7px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1;
+}
+
+.live-links a:hover {
+  color: black;
+}
+
+.project-details .img-detail {
+  width: 45%;
+  min-height: 45vh;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.img-detail img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* contact section */
+
+
+.contact-section-details {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contact-details {
+  margin-top: 60px;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.contact-details .social-contact {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blueviolet;
+  border-radius: 8px;
+  background-image: linear-gradient(blueviolet, pink);
+  /* background-image: linear-gradient(to bottom, blueviolet, rgb(219, 37, 113, 0.6)); */
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.7);
+}
+
+.social-icons {
+
+  font-size: 70px;
+
+}
+
+.social-contact a {
+
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+
+}
+
+.social-contact a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+.social-contact:hover .social-icons {
+  transform: translateY(-.26rem);
+}
+
+
+.footer {
+  height: 40px;
+  background-image: linear-gradient(pink, blueviolet);
+  text-align: center;
+  justify-content: center;
+
+}
+
+.footer a {
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1;
+}
