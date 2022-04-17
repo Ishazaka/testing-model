@@ -369,14 +369,14 @@ a.style:hover:after {
 .project-details .img-detail {
   width: 45%;
   min-height: 45vh;
-  border: 1px solid white;
-  border-radius: 6px;
+/*   border: 1px solid white;
+  border-radius: 6px; */
 }
 
 .img-detail img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
+  width: 500px;
+  height: 500px;
+ 
 }
 
 /* contact section */
