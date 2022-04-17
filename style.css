@@ -325,7 +325,7 @@ a.style:hover:after {
 
   position: relative;
   width: 90vw;
-  margin: 40px auto;
+  margin: 34px auto;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -350,6 +350,7 @@ a.style:hover:after {
 .detail p {
   font-size: 20px;
   margin-bottom: 20px;
+  letter-spacing:1;
 }
 
 .live-links a {
@@ -397,7 +398,7 @@ a.style:hover:after {
   min-height: 50vh;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
