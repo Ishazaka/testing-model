@@ -355,7 +355,8 @@ a.style:hover:after {
 
 .live-links a {
   margin: 20px 10px;
-  background-image: linear-gradient(to bottom, blueviolet, rgb(233, 81, 144));
+/*   background-image: linear-gradient(to bottom, blueviolet, rgb(233, 81, 144)); */
+   background-image: linear-gradient(blueviolet, pink);
   color: white;
   border-radius: 3px;
   padding: 7px 20px;
@@ -425,6 +426,10 @@ a.style:hover:after {
 }
 
 .contact-details .social-contact:hover .social-icons {
+  color: black;
+}
+
+.contact-details .social-contact:hover.social-contact a {
   color: black;
 }
 
