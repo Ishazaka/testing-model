@@ -376,8 +376,10 @@ a.style:hover:after {
 }
 
 .img-detail img {
-  width: 530px;
-  height: 500px;
+  width: 86%;
+  height: 80%;
+/*   width: 530px;
+  height: 500px; */
  
 }
 
