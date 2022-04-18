@@ -417,6 +417,16 @@ a.style:hover:after {
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.7);
 }
 
+.contact-details .social-contact:hover {
+  background-image: linear-gradient(pink, blueviolet);
+  transform: translateY(-16px);
+}
+
+.contact-details .social-contact:hover .social-icons {
+  color: black;
+}
+
+
 .social-icons {
 
   font-size: 70px;
