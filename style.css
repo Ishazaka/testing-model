@@ -73,13 +73,45 @@ body {
 /* navlinks */
 
 
-.nav-item:first-child {
-  border-bottom: 1px solid blueviolet;
+.nav-link {
+  position: relative;
+  font-size: 18px;
+  font-family: "Playfair Display";
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
-.nav-link:hover {
-  border-top: 1px solid blueviolet;
+.nav-link:before,
+.nav-link:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  background-color: blueviolet;
+  transition: 0.5s;
+}
+
+.nav-link:after {
+  left: 0;
+  bottom: 0;
+}
+
+.nav-link:before {
+  right: 0;
+  top: 0;
+}
+
+.nav-link:hover::after,
+.nav-link:hover::before {
+  width: 100%;
+}
+
+
+/* .nav-item:first-child {
   border-bottom: 1px solid blueviolet;
+} */
+
+.nav-link:hover {
   color: blueviolet !important;
 }
 
@@ -87,12 +119,7 @@ body {
   color: blueviolet
 }
 
-ul .nav-item {
-  font-size: 18px;
-  font-family: "Playfair Display";
-  font-weight: 300;
-  letter-spacing: 1px;
-}
+
 
 /* home section heading1 */
 
